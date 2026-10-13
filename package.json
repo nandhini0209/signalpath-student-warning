@@ -1,0 +1,14 @@
+{
+  "name": "student-early-warning-system",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.18.0",
+  "type": "module",
+  "scripts": {"dev":"tsx server/index.ts","build":"vite build && tsc -p tsconfig.server.json","start":"node dist/server/index.js","check":"tsc -p tsconfig.json --noEmit && tsc -p tsconfig.server.json --noEmit","seed":"tsx server/seed.ts","db:migrate":"tsx server/migrate.ts"},
+  "dependencies": {
+    "@vitejs/plugin-react":"latest","axios":"latest","bcryptjs":"latest","cookie-parser":"latest","cors":"latest","dotenv":"latest","express":"latest","jsonwebtoken":"latest","lucide-react":"latest","mysql2":"latest","nodemailer":"latest","react":"latest","react-dom":"latest","react-router-dom":"latest","recharts":"latest","vite":"latest","zod":"latest"
+  },
+  "devDependencies": {
+    "@types/bcryptjs":"latest","@types/cookie-parser":"latest","@types/cors":"latest","@types/express":"latest","@types/jsonwebtoken":"latest","@types/node":"latest","@types/nodemailer":"latest","@types/react":"latest","@types/react-dom":"latest","autoprefixer":"latest","postcss":"latest","tailwindcss":"latest","tsx":"latest","typescript":"latest"
+  }
+}
